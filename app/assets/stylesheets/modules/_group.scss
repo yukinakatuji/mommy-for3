@@ -93,8 +93,49 @@
         overflow: scroll;
         width: calc(100vw - 300px);
         height: calc(100vh - 180px);
-        background-color: lightgray;
+        background-color: #fafafa;
+
+        .upper-message{
+          display: flex;
+          justify-self: start;
+          margin-left: 30px;
+          box-sizing: border-box;
+
+          .upper-message_user-name{
+            padding-top: 45px;
+            background-color: #fafafa;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+          }
+
+          .upper-message__date{
+            padding-top: 45px;
+            margin-left: 5px;
+            background-color: #fafafa;
+            font-size: 10px;
+            color: #999999;
+          }
       }
+      .lower-message{
+
+        margin-left: 40px;
+        padding-top: 12px;
+        background-color: #fafafa;
+        font-size: 14px;
+        color: #434A54;
+
+      .lower-message__image{
+        font-size: 14px;
+        color: #434A54;
+        width: calc(100vw- 300px);
+        border: 0px;
+      }
+    }
+
+        
+    }
+      
     
       .chat-main_form{
         height: 80px;
