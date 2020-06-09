@@ -1,0 +1,23 @@
+.main-view
+  .left-bar
+    .left-box
+      .user-box
+        = current_user.name
+      .icon-box
+        .side-icon-edit
+          = link_to new_group_path do
+            =icon("far","edit", class: "icon")
+        .side-icon-tshirt
+          =icon("fa","tshirt",class: "icon")
+      .current-group
+  .right-view
+    .messages
+
+    .chat-main_form
+      .chat-main_form_table
+        メッセージを入れてね！
+        .choose-image
+          = icon('far', 'image', class: 'icon')
+          .hidden
+      .submit-btn
+        Go!

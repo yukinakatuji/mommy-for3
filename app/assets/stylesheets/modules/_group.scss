@@ -1,0 +1,145 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+
+  .header{
+    height: 100px;
+    width: 100%;
+    background-color: skyblue;
+    padding-top: 0px;
+  
+    .header-title{
+      color: lightcoral;
+    }
+  
+    .right-box{
+      display: flex;
+      font-size: 20px;
+      float: right;
+      margin-right: 50px;
+      margin-top: -50px;
+  
+      .btn-box{
+        font-size: 20px;
+      }
+  
+    }
+  }
+
+  .main-view{
+    display: flex;
+    float: left;
+    background-color: lightblue;
+    height: calc(100vh - 100px);
+    width: 100%;
+
+    .left-bar{ 
+      height: calc(100vh - 100px);
+      width: 300px;
+      background-color: pink;
+    
+      .left-box{
+        margin-left: 20px;
+        height: 550px;
+        width: 250px;
+        background-color: pink;
+        display: flex;
+
+    
+        .user-box{
+          height: 30px;
+          width: 200px;
+          background-color: pink;
+          padding-top: 10px;
+          margin-left: 60px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+    
+        .icon-box{
+          height: 30px;
+          padding-top: 10px;
+          display: flex;
+
+          .side-icon-edit{
+            width: 30px;
+
+            .far{
+              color: purple;
+              font-size: 20px;
+            }
+          }
+          .side-icon-tshirt{
+            float: right;
+            margin-left: 10px;
+
+            .fa{
+              color: purple;
+              font-size: 20px;
+            }
+          }
+        } 
+      }
+    }
+
+    .right-view{
+      width: calc(100vw - 300px);
+      height: calc(100vh - 180px);
+
+      .messages{
+        overflow: scroll;
+        width: calc(100vw - 300px);
+        height: calc(100vh - 180px);
+        background-color: lightgray;
+      }
+    
+      .chat-main_form{
+        height: 80px;
+        width: calc(100vw - 300px);
+        background-color: skyblue;
+        display: flex;
+
+        .chat-main_form_table{
+          height: 60px;
+          width: calc(100vw - 500px);
+          background-color: #ffffff;
+          font-size: 15px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          margin-left: 20px;
+          line-height: 60px;
+          color: #d2d2d2;
+
+          .choose-image {
+            position: absolute;
+            right: 30px;
+            color: #253141;
+            font-size: 30px;
+            display: inline-block;
+
+            .hidden{
+              display: none;
+            }
+          }
+        }
+        .submit-btn{
+          width: 150px;
+          height: 60px;
+          margin-top: 10px;
+          margin-left: 20px;
+          line-height: 60px;
+          color: black;
+          background-color: pink;
+          text-align: center;
+        }
+  
+      }
+     
+    }
+  }
+}
