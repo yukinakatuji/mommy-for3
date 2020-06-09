@@ -1,6 +1,11 @@
 class MenusController < ApplicationController
   def index
-  #   @menus = 
-  #   @menus = @messages.includes(:user)
+    # @menus = new
+
+    # redirect_to user_path(@user.id)
   end
+
+  # def show
+
+  # end
 end
