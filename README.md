@@ -28,11 +28,11 @@ Things you may want to cover:
 - has_many :groups. through: :groups_users
 - has_many :groups_users
 
-## tweetsテーブル
+## postsテーブル
 Column|Type|Options|
 |------|----|-------|
-|text|text||
-|image|text||
+|title|text||
+|content|text||
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
@@ -83,6 +83,7 @@ Column|Type|Options|
 ### Association
 - belongs_to :group
 - belongs_to :user
+
 
 
 * Database initialization
