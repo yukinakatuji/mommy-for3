@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
 
   def index
-    @post = Post.all
-    @posts = Post.includes(:user)
+    @posts = Post.all
+    # @posts = Post.includes(:user)
   end
 
   def new
