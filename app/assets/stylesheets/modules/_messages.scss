@@ -40,10 +40,11 @@
       height: calc(100vh - 100px);
       width: 300px;
       background-color: pink;
+      position: relative;
     
       .left-box{
         margin-left: 20px;
-        height: 550px;
+        height: 50px;
         width: 250px;
         background-color: pink;
         display: flex;
@@ -54,7 +55,6 @@
           width: 200px;
           background-color: pink;
           padding-top: 10px;
-          margin-left: 60px;
           font-size: 20px;
           font-weight: bold;
         }
@@ -69,7 +69,7 @@
 
             .far{
               color: purple;
-              font-size: 20px;
+              font-size: 25px;
             }
           }
 
@@ -78,7 +78,7 @@
 
             fa{
               color: purple;
-              font-size: 20px;
+              font-size: 25px;
             }
           }
           .side-icon-tshirt{
@@ -87,10 +87,44 @@
 
             .fa{
               color: purple;
-              font-size: 20px;
+              font-size: 25px;
             }
           }
         } 
+      }
+
+      .side-group {
+        height: 500px;
+        width: 200px;
+        background-color:pink;
+        margin-top: 45px;
+        padding-top: 20px;
+        position: absolute;
+
+        .groups-list{
+          height: 90px;
+          background-color: pink;
+          width: 200px;
+          
+          &-top{
+            padding-bottom: 40px;
+          }
+          &-center{
+            height: 15px;
+            background-color: pink;
+            margin-bottom: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+          }
+          &-bottom{
+            // height: 11px;
+            background-color: pink;
+            font-size: 11px;
+            font-weight: bold;
+            color: black;
+          }
+        }
       }
     }
 
@@ -118,7 +152,6 @@
             color: black;
           }
 
-
           .upper-message__date{
             padding-top: 45px;
             margin-left: 5px;
@@ -141,21 +174,18 @@
         width: calc(100vw- 300px);
         border: 0px;
       }
-    }
-
-        
-    }
-      
+     }     
+    }  
     
-      .chat-main_form{
+      .chat-main-form{
         height: 80px;
         width: calc(100vw - 300px);
         background-color: skyblue;
         display: flex;
 
-        .chat-main_form_table{
+        .chat-main__form__table{
           height: 60px;
-          width: calc(100vw - 500px);
+          width:  900px;
           background-color: #ffffff;
           font-size: 15px;
           position: relative;
@@ -165,6 +195,12 @@
           margin-left: 20px;
           line-height: 60px;
           color: #d2d2d2;
+
+          .form__message{
+            width: 100%;
+            height: 100%;
+            padding-left: 5px;
+          }
 
           .choose-image {
             position: absolute;
@@ -178,19 +214,20 @@
             }
           }
         }
-        .submit-btn{
+        .form__submit{
           width: 150px;
-          height: 60px;
-          margin-top: 10px;
-          margin-left: 20px;
           line-height: 60px;
+          font-size: 20px;
           color: black;
+          border: none;
           background-color: pink;
           text-align: center;
+          position: absolute;
+          margin-left: 955px;
+          margin-top: -60px;
         }
   
-      }
-     
-    }
+     }
+   }  
   }
 }

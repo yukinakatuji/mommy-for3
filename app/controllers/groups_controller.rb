@@ -1,13 +1,8 @@
 class GroupsController < ApplicationController
   def index
-    # @group = Group.new
-    # @message = Message.new
+    @group =  Group.new
+    @message = Message.new
   end
-
-  # def show
-  #   @group = Group.new
-  #   group = Group.find(params[:id])
-  # end
 
   def new
     @group = Group.new
