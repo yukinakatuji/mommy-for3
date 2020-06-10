@@ -2,16 +2,14 @@
   .my_page-box
     .side-icons-a
       .side-icon-home 
-        =link_to "#" do
-          =icon("fas", "home", class: "icon")
-    .my_page-title  
-      マイルーム
+        =icon("fas", "home", class: "icon")
+    = link_to 'マイルーム', "/tweets", method: :get
   .message-box
     .side-icons-b
       .side-icon-child
-      = link_to "#" do
         =icon("fas","child", class: "child")
     .message-title
+    = link_to groups_path do
       フェロールーム
   .information-box
     .side-icons-c
