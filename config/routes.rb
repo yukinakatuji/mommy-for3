@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'menus#index'
+  root 'tweets#index'
   root 'groups#index'
   root 'messages#index'
+  root 'user#index'
 
 #   devise_for :users, :controllers => {
 #  :registrations => 'users/registrations'
@@ -17,20 +19,24 @@ Rails.application.routes.draw do
   # sessions: 'users/sessions',
   # registrations: 'users/registrations'
 
-  # root to: 'users#index'
-  # root to: 'mypage#index'
-
   resources :users, only: [:index, :edit, :update]
+  resources :tweets, only: [:index]
   resources :groups, only: [:index, :new, :create, :edit, :update] do
   resources :messages, only: [:index, :create]
-
-
-  # resources :diary, only: [:index, :show, :new, :create, :edit, :update] 
-  
  
+
+  namespace :tweets do
+    resources :searches, only: :index
+  end
+  # resources :tweets do
+  #   resources :comments, only: :create
+  # end
+  resources :users, only: :show
+end
 
   namespace :api do
     resources :messages, only: :index, defaults: { format: 'json' }
     end
-  end
+
 end
+
