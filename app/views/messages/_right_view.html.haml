@@ -1,6 +1,7 @@
 .main-view
   .right-view
     .messages
+      = render partial: 'message', collection: @messages
       .upper-message
         .upper-message_user-name
           User
@@ -11,9 +12,9 @@
       .lower-message__image
 
     .chat-main-form
-      = form_for [@group] do |f|
+      = form_for [@group, @message] do |f|
         .chat-main__form__table
-          -# = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+          = f.text_field :content, class: 'form__message', placeholder: '仲間へメッセージを送りましょう！'
           = f.label :image, class: "choose-image" do
             = icon('far', 'image', class: 'icon')
             = f.file_field :image, class: 'hidden'
