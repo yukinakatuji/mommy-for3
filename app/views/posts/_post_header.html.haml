@@ -1,13 +1,11 @@
 .header
   .header-name
     My room🏠
-  .right-box
-    .btn-box
-      =link_to root_path do
-        Doorway🚪
+  .header__left
+    =link_to root_path do
+      Doorway🚪
   .header__right
     = link_to "#", class: "header__right--btn" 
     New📖Diary
-.tweets
+.posts
   = yield
-

@@ -3,7 +3,8 @@
     .side-icons-a
       .side-icon-home 
         =icon("fas", "home", class: "icon")
-    = link_to 'マイルーム', "/tweets", method: :get
+    = link_to posts_path do
+      マイルーム
   .message-box
     .side-icons-b
       .side-icon-child
@@ -16,5 +17,5 @@
       .side-icon-baby
         = link_to "#" do
           =icon("fas","baby", class: "baby")
-    .information-title
+    .information_title
       アイデアルーム
