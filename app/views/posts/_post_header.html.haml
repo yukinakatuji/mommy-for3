@@ -5,7 +5,8 @@
     =link_to root_path do
       Doorway🚪
   .header__right
-    = link_to "#", class: "header__right--btn" 
-    New📖Diary
+    .header__right--btn 
+    = link_to new_post_path do
+      New📖Diary
 .posts
   = yield

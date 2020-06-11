@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # registrations: 'users/registrations'
 
   resources :users, only: [:index, :edit, :update]
-  resources :posts, only: [:index, :new, :create]
+  resources :posts, only: [:index, :show, :new, :create]
   resources :groups, only: [:index, :new, :create, :edit, :update] do
   resources :messages, only: [:index, :create]
  
