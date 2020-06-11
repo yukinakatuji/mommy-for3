@@ -1,11 +1,11 @@
 .contents
-  .contents__left
-    .contents__left--image
-      .contents__right
-        .contents__right__top
-          -# = link_to post.title, post_path(post.id), class: "text__right__top--title" 
-        .contents__right__bottom
-          .contents__right__bottom--userName
-            -# = link_to post.user.nickname, user_path(post.user), class: "text__right__bottom--userName--btn"
-          .contents__right__bottom--date
-          -# = tweet.created_at
+  .content__left
+    .contens__left--image
+      .content__right
+        .content__right__top
+          -# = link_to post.title, post_path(post.id), class: "content__right__top--title" 
+        .content__right__bottom
+          .content__right__bottom--userName
+            -# = link_to post.user.nickname, user_path(post.user), class: "content__right__bottom--userName--btn"
+          .content__right__bottom--date
+          -# = posts.created_at

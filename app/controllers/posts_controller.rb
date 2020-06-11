@@ -2,7 +2,12 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
-    # @posts = Post.includes(:user)
+    @posts = Post.includes(:user)
+  end
+
+
+  def show
+    @post = Post.find(params[:id])
   end
 
   def new
@@ -11,12 +16,8 @@ class PostsController < ApplicationController
 
   def create
     Post.create(post_params)
-    # redirect_to root_path
+    redirect_to root_path
   end
-
-  # def show
-  #   @post = Post.find(params[:id])
-  # end
 
   # def edit
   #   @post = Post.find(params[:id])

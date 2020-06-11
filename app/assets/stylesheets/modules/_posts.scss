@@ -31,7 +31,7 @@
       margin-top: -50px;
   
   
-      &--btn{
+      .header__right--btn{
         text-decoration: none;
         line-height: 56px;
         color: #fff;
@@ -51,35 +51,35 @@
       padding: 10px;
       border-bottom: 1px solid #f6f6f6;
       display: flex;
-      &__left{
+      .content__left{
         padding-right: 20px;
-        &--image{
+        .conten__left--image{
           height: 55px;
           width: 55px;
           border: solid 1px;
         }
       }
-      &__right{
+      .content__right{
         width: calc(100%-100px);
-        &__top{
+        .content__right__top{
           font-size: 20px;
           font-weight: bold;
-          &--title{
+          .content__right--title{
             text-decoration: none;
             color: #000000;
           }
         }
-        &__bottom{
+        .content__right__bottom{
           font-size: 15px;
           color: #999;
           display: flex;
-          &--userName{
+          .content__right__bottom--userName{
             &--btn{
               text-decoration: none;
               color: #999;
             }
           }
-          &--date{
+          .content__right__bottom--date{
             margin-left: 20px;
           }
         }
@@ -111,6 +111,7 @@
       display: flex;
       justify-content: center;
       margin-top: 10px;
+
       &__edit{
         display: block;
         border-radius: 5px;
@@ -139,23 +140,28 @@
     height: 100%;
     margin: 0 auto;
     padding-top: 30px;
-    &__title{
+    display: flex;
+
+    .form__title{
       display: block;
       width: 100%;
       height: 50px;
     }
-    &__text{
+
+    .form__content{
       display: block;
       width: 100%;
       height: 50%;
       margin-top: 15px;
     }
-    &__btn{
+
+    .form__btn{
       display: block;
       width: 30%;
       margin: 15px auto 0;
     }
   }
+
   .user{
     padding: 15px 30px;
   }
