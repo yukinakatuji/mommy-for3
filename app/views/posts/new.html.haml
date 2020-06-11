@@ -1,16 +1,18 @@
-.wrapper
-  .header
-    .header-name
-      New📖Diary
-    .header__left
-      =link_to root_path do
-        Doorway🚪
-    .header__right
+.header
+  .header-name
+    New📖Diary
+  .header__left
+    =link_to root_path do
+      Doorway🚪
+  .header__right
 
+.blog-box
   = form_for (@post) do |form|
     = form.label :title
-    = form.text_field "title", class: "form_title", placeholder: "タイトル"
-    = form.label :content
-    = form.text_area "content", class: "form_content", placeholder: "ブログ本文"
-    = form.label :title
-    = form.submit "投稿する", class: "form_btn"
+    = form.text_field "title", class: "form_main", placeholder: "タイトル"
+    = form.label :blog
+    = form.text_area "content", class: "form_box", placeholder: "本文"
+    = form.label :Go!
+    = form.submit "keep a diary🖋", class: "form_send"
+  -#    = link_to post_path do
+  .bottom-box
