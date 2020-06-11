@@ -1,9 +1,16 @@
-.form
-  新規記事の作成
-= form_for (@post) do |form|
-  = form.label :title
-  = form.text_field "title", class: "form_title", placeholder: "タイトル"
-  = form.label :content
-  = form.text_area "content", class: "form_content", placeholder: "ブログ本文"
-  = form.label :title
-  = form.submit "投稿する", class: "form_btn"
+.wrapper
+  .header
+    .header-name
+      New📖Diary
+    .header__left
+      =link_to root_path do
+        Doorway🚪
+    .header__right
+
+  = form_for (@post) do |form|
+    = form.label :title
+    = form.text_field "title", class: "form_title", placeholder: "タイトル"
+    = form.label :content
+    = form.text_area "content", class: "form_content", placeholder: "ブログ本文"
+    = form.label :title
+    = form.submit "投稿する", class: "form_btn"

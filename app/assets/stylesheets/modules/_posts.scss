@@ -47,10 +47,12 @@
     height: 600px;
     width: 70%;
     overflow: scroll;
+    
     .content{
       padding: 10px;
-      border-bottom: 1px solid #f6f6f6;
+      border-bottom: 1px solid red;
       display: flex;
+
       .content__left{
         padding-right: 20px;
         .conten__left--image{
