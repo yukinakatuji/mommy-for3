@@ -1,169 +1,181 @@
-.wrapper{
-  background-color: #f6f6f6;
-  min-width: 650px;
+.header{
+  height: 100px;
+  width: 100%;
+  background-color: lightcyan;
+  padding-top: 0px;
 
-  .header{
-    height: 100px;
-    width: 100%;
-    background-color: lightcyan;
-    padding-top: 0px;
+  .header-name{
+    font-size: 30px;
+    line-height: 56px;
+    padding-top: 20px;
+  }
 
-    .header-name{
-      font-size: 30px;
-      line-height: 56px;
-      padding-top: 20px;
-    }
-
-    .header__left{
-        display: flex;
-        font-size: 20px;
-        float: right;
-        margin-right: 50px;
-        margin-top: -50px;
-        font-size: 20px;
-        height: 50px;
-    }
-  
-    .header__right{
+  .header__left{
+      display: flex;
+      font-size: 20px;
       float: right;
-      font-size: 20px;
-      margin-right: 180px;
+      margin-right: 50px;
       margin-top: -50px;
-  
-  
-      .header__right--btn{
-        text-decoration: none;
-        line-height: 56px;
-        color: #fff;
-        margin-left:15px;
-      }
-    }
-
-  }
-
-  .contents{
-    margin: 30px auto 0;
-    background-color: #fff;
-    height: 600px;
-    width: 70%;
-    overflow: scroll;
-    
-    .content{
-      padding: 10px;
-      border-bottom: 1px solid red;
-      display: flex;
-
-      .content__left{
-        padding-right: 20px;
-        .conten__left--image{
-          height: 55px;
-          width: 55px;
-          border: solid 1px;
-        }
-      }
-      .content__right{
-        width: calc(100%-100px);
-        .content__right__top{
-          font-size: 20px;
-          font-weight: bold;
-          .content__right--title{
-            text-decoration: none;
-            color: #000000;
-          }
-        }
-        .content__right__bottom{
-          font-size: 15px;
-          color: #999;
-          display: flex;
-          .content__right__bottom--userName{
-            &--btn{
-              text-decoration: none;
-              color: #999;
-            }
-          }
-          .content__right__bottom--date{
-            margin-left: 20px;
-          }
-        }
-      }
-      &__title{
-        font-size: 30px;
-        font-weight: bold;
-        padding-top: 30px;
-        text-align: center;
-      }
-    }
-    .postTitle{
-      padding-top: 20px;
-      text-align: center;
       font-size: 20px;
-      font-weight: bold;
-    }
-    .postDate{
-      font-size: 15px;
-      color: #999;
-      text-align: center;
-    }
-    .postAuthor{
-      font-size: 15px;
-      color: #999;
-      text-align: center;
-    }
-    .postManage{
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
+      height: 50px;
+  }
 
-      &__edit{
-        display: block;
-        border-radius: 5px;
-        color: #ffffff;
-        background-color:#55c500;
-        padding: 0 10px;
-        text-decoration: none;
-        margin-right: 10px;
-      }
-      &__delete{
-        display: block;
-        border-radius: 5px;
-        color: #ffffff;
-        background-color:#55c500;
-        padding: 0 10px;
-        text-decoration: none;
-        margin-left: 10px;
-      }
-    }
-    .postText{
-      margin: 20px 30px;
+  .header__right{
+    float: right;
+    font-size: 20px;
+    margin-right: 180px;
+    margin-top: -50px;
+
+
+    .header__right--btn{
+      text-decoration: none;
+      line-height: 56px;
+      color: #fff;
+      margin-left:15px;
     }
   }
-  .form{
+
+}
+
+.contents{
+  margin: 30px auto 0;
+  background-color: #fff;
+  height: 600px;
+  width: 70%;
+  overflow: scroll;
+  
+  .content{
+    padding: 10px;
+    border-bottom: 1px solid red;
+    display: flex;
+
+    .content__left{
+      padding-right: 20px;
+      .conten__left--image{
+        height: 55px;
+        width: 55px;
+        border: solid 1px;
+      }
+    }
+    .content__right{
+      width: calc(100%-100px);
+      .content__right__top{
+        font-size: 20px;
+        font-weight: bold;
+        .content__right--title{
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+      .content__right__bottom{
+        font-size: 15px;
+        color: #999;
+        display: flex;
+        .content__right__bottom--userName{
+          &--btn{
+            text-decoration: none;
+            color: #999;
+          }
+        }
+        .content__right__bottom--date{
+          margin-left: 20px;
+        }
+      }
+    }
+    &__title{
+      font-size: 30px;
+      font-weight: bold;
+      padding-top: 30px;
+      text-align: center;
+    }
+  }
+  .postTitle{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .postDate{
+    font-size: 15px;
+    color: #999;
+    text-align: center;
+  }
+  .postAuthor{
+    font-size: 15px;
+    color: #999;
+    text-align: center;
+  }
+  .postManage{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    &__edit{
+      display: block;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color:#55c500;
+      padding: 0 10px;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    &__delete{
+      display: block;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color:#55c500;
+      padding: 0 10px;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+  }
+  .postText{
+    margin: 20px 30px;
+  }
+}
+.blog-box{
+  height: 500px;
+  width:100%;
+  background-color: lightblue;
+
+  .new_post{
     width: 85%;
     height: 100%;
     margin: 0 auto;
     padding-top: 30px;
     display: flex;
-
-    .form__title{
+    flex-direction: column;
+    background-color: skyblue;
+  
+    .form_main{
       display: block;
-      width: 100%;
-      height: 50px;
+      width: 80%;
+      height: 30px;
+      margin: auto;
     }
-
-    .form__content{
+  
+    .form_box{
       display: block;
-      width: 100%;
-      height: 50%;
+      width: 80%;
+      height: 300px;
       margin-top: 15px;
+      margin: auto;
     }
-
-    .form__btn{
+  
+    .form_send{
       display: block;
       width: 30%;
       margin: 15px auto 0;
+      margin-bottom: 10px;
     }
   }
-
+  .bottom-box{
+    height: calc(100vh - 600px);
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: lightcyan;
+  }
+  
   .user{
     padding: 15px 30px;
   }
