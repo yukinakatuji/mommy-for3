@@ -1,3 +1,7 @@
-.wrapper
-  = render "posts/post"
-  = render "posts/post_view"
+- @posts.each do |post|
+  =render partial: "post", locals: { post: post } 
+  
+-# .wrapper
+-#   = render "posts/post_header"
+-#   = render "posts/post"
+-#   = render "posts/post_view"

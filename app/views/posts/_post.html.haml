@@ -1,28 +1,13 @@
-.base_box
-  .header
-    .header-name
-      My room🏠
-    .header__left
-      =link_to root_path do
-        Doorway🚪
-    .header__right
-      .header__right--btn 
-      = link_to new_post_path do
-        New📖Diary
-  .posts
-    = yield
-  
-  .contents
-    .content
-      .content__left
-        .contens__left--image
-      .content__right
-        .content__right__top
-          -# = link_to post.title, post_path(post.id), class: "content__right__top--title" 
-          .content__right--title
-        .content__right__bottom
-          .content__right__bottom--userName
-            .content__right__bottom--userName--btn
-              -# # = link_to post.user, user_path(post.user), class: "content__right__bottom--userName--btn"
-            .content__right__bottom--date
-              -# = posts.created_at
+.content
+  .content__left
+    .contens__left--image
+  .content__right
+    .content__right__top
+      = link_to post.title, post_path(post.id), class: "content__right__top--title" 
+      .content__right--title
+    .content__right__bottom
+      .content__right__bottom--userName
+        .content__right__bottom--userName--btn
+          = link_to post.user, user_path(post.user), class: "content__right__bottom--userName--btn"
+          .content__right__bottom--date
+          -# = posts.created_at

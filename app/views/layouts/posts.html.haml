@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title mommy-for3
+    = csrf_meta_tags
+    -# = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %header.header
+      .header__title
+        Share✍️room
+      .header__right
+        - if user_signed_in?
+          -# = link_to current_user.nickname, user_path(current_user), class: "header__right--btn"
+          = link_to "New📖Diary", new_post_path, class: "header__right--btn"
+        .header__right--btn
+          = link_to root_path do
+            Doorway🚪
+        -# - else
+          -# = link_to "ログイン", new_user_session_path, class: "header__right--btn"
+          -# = link_to "新規登録", new_user_registration_path, class: "header__right--btn"
+    .contents
+      = yield

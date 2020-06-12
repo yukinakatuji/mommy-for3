@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'posts#index'
   root 'groups#index'
   root 'messages#index'
+  root 'tweets#index'
   root 'user#index'
 
 #   devise_for :users, :controllers => {

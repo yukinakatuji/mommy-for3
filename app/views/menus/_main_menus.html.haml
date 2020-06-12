@@ -2,20 +2,21 @@
   .my_page-box
     .side-icons-a
       .side-icon-home 
-        =icon("fas", "home", class: "icon")
-    = link_to posts_path do
-      マイルーム
+      =link_to posts_path do
+        =icon("fa", "home", class: "icon")
+    .my-page-title
+      Share✍️room
   .message-box
     .side-icons-b
-      .side-icon-child
-        =icon("fas","child", class: "child")
+      .side-icon-baby
+      = link_to groups_path do
+        =icon("fas","baby", class: "baby")
     .message-title
-    = link_to groups_path do
-      フェロールーム
+      Fellow🌼room
   .information-box
     .side-icons-c
-      .side-icon-baby
+      .side-icon-child
         = link_to "#" do
-          =icon("fas","baby", class: "baby")
+          =icon("fas","child", class: "child")
     .information_title
-      アイデアルーム
+      Idea💡room
