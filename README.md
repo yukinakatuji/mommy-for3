@@ -18,7 +18,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|e_mail|string|null: false,　unique: true|
+|e_mail|string|null: false, unique:true|
 |passward|string|null: false|
 
 ### Association
@@ -33,7 +33,7 @@ Column|Type|Options|
 |------|----|-------|
 |title|text||
 |content|text||
-|user_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false,foreign_key: true|
 
 ### Association
 - belongs_to :user

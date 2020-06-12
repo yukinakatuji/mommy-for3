@@ -60,7 +60,7 @@
       display: flex;
 
       .my_page-box{
-        height: 100px;
+        height: 250px;
         width: 350px;
         background-color: lightcyan;
         margin: auto;
@@ -70,22 +70,24 @@
         .side-icons-a{
           width: 30ox;
           margin-right: 10px;
+          margin-top: 40px;
             
             .fa-home{
               color: violet;
-              font-size: 40px;
+              font-size: 120px;
             }
         }
 
         .my-page-title{
           color: pink;
-          font-size: 25px;
+          font-size: 30px;
+          font-weight: bold;
         }
 
       }
 
       .message-box{
-        height: 100px;
+        height: 250px;
         width: 350px;
         background-color: lightcyan;
         margin: auto;
@@ -95,20 +97,22 @@
         .side-icons-b{
           width: 30ox;
           margin-right: 10px;
+          margin-top: 40px;
             
-            .fa-child{
+            .fa-baby{
               color: orange;
-              font-size: 40px;
+              font-size: 120px;
             }
         }
 
         .message-title{
           color: pink;
-          font-size: 25px;
+          font-size: 30px;
+          font-weight: bold;
         }
       }
       .information-box{
-        height: 100px;
+        height: 250px;
         width: 350px;
         background-color: lightcyan;
         margin: auto;
@@ -118,16 +122,18 @@
         .side-icons-c{
           width: 30ox;
           margin-right: 10px;
+          margin-top: 40px;
             
-            .fa-baby{
+            .fa-child{
               color: lightseagreen;
-              font-size: 40px;
+              font-size: 120px;
             }
         }
 
         .information_title{
           color: pink;
-          font-size: 25px;
+          font-size: 30px;
+          font-weight: bold;
         }
       }
     }
