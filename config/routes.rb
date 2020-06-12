@@ -19,8 +19,8 @@ Rails.application.routes.draw do
   # sessions: 'users/sessions',
   # registrations: 'users/registrations'
 
-  resources :users, only: [:index, :edit, :update]
-  resources :posts, only: [:index, :show, :new, :create, :edit, :update]
+  resources :users, only: [:index, :show, :edit, :update]
+  resources :posts, expect: [:index, :show, :new, :create, :edit, :update]
   resources :groups, only: [:index, :new, :create, :edit, :update] do
   resources :messages, only: [:index, :create]
  
