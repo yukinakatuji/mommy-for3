@@ -41,13 +41,14 @@
   margin: 30px auto 0;
   background-color: #fff;
   height: 600px;
-  width: 70%;
+  width: 100%;
   overflow: scroll;
   
   .content{
     padding: 10px;
     border-bottom: 1px solid red;
-    display: flex;
+    flex-direction: column;
+    // display: flex;
 
     .content__left{
       padding-right: 20px;
@@ -71,6 +72,7 @@
         font-size: 15px;
         color: #999;
         display: flex;
+
         .content__right__bottom--userName{
           &--btn{
             text-decoration: none;
@@ -146,23 +148,59 @@
     display: flex;
     flex-direction: column;
     background-color: skyblue;
+    align-items: center;
   
-    .form_main{
+    .form__main{
       display: block;
       width: 80%;
       height: 30px;
-      margin: auto;
     }
   
-    .form_box{
+    .form__box{
       display: block;
       width: 80%;
-      height: 300px;
+      height: 400px;
       margin-top: 15px;
-      margin: auto;
     }
   
-    .form_send{
+    .form__send{
+      display: block;
+      width: 30%;
+      margin: 15px auto 0;
+      margin-bottom: 10px;
+    }
+  }
+  .bottom-box{
+    height: calc(100vh - 600px);
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: lightcyan;
+  }
+
+  .edit_post{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    align-items: center;
+  
+    .form__main_b{
+      display: block;
+      width: 80%;
+      height: 30px;
+    }
+  
+    .form__box_b{
+      display: block;
+      width: 80%;
+      height: 400px;
+      margin-top: 15px;
+    }
+  
+    .form__send_b{
       display: block;
       width: 30%;
       margin: 15px auto 0;
