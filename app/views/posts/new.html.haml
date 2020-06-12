@@ -8,11 +8,9 @@
 
 .blog-box
   = form_for (@post) do |form|
-    = form.label :title
-    = form.text_field "title", class: "form_main", placeholder: "タイトル"
-    = form.label :blog
-    = form.text_area "content", class: "form_box", placeholder: "本文"
-    = form.label :Go!
-    = form.submit "keep a diary🖋", class: "form_send"
+    = form.text_field :title, placeholder: :タイトル, class: :form__main
+    = form.text_area :content, placeholder: :ブログ本文, class: :form__box
+    = form.submit 'keep a diary🖋', class: :form__send
   -#    = link_to post_path do
   .bottom-box
+
