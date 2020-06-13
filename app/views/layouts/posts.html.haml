@@ -11,15 +11,10 @@
     %header.header
       .header__title
         Share✍️room
-      .header__right
-        - if user_signed_in?
-          -# = link_to current_user.nickname, user_path(current_user), class: "header__right--btn"
-          = link_to "New📖Diary", new_post_path, class: "header__right--btn"
-        .header__right--btn
-          = link_to root_path do
-            Doorway🚪
-        -# - else
-          -# = link_to "ログイン", new_user_session_path, class: "header__right--btn"
-          -# = link_to "新規登録", new_user_registration_path, class: "header__right--btn"
+      .header__box
+        .header__left
+          = link_to "New📖Diary", new_post_path, class: "header__left--btn"
+        .header__right
+          = link_to "Doorway🚪", root_path, class: "header__right--btn"
     .contents
       = yield

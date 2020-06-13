@@ -8,6 +8,6 @@
     .content__right__bottom
       .content__right__bottom--userName
         .content__right__bottom--userName--btn
-          = link_to post.user, user_path(post.user), class: "content__right__bottom--userName--btn"
-          .content__right__bottom--date
-          -# = posts.created_at
+          = link_to post.user.name, user_path(post.user), class: "content__right__bottom--userName--btn"
+      .content__right__bottom--date
+        = post.created_at
