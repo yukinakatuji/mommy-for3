@@ -8,11 +8,11 @@
           = link_to new_group_path do
             =icon("fa","users", class: "icon")
         .side-icon-edit
-          = link_to "#" do
+          = link_to edit_group_path(@group,:id) do
             =icon("far","edit",class: "icon")
-        .side-icon-tshirt
-          =link_to edit_group_path(:group) do
-            =icon("fa","tshirt",class: "icon")
+        -# .side-icon-tshirt
+        -#   -# =link_to edit_group_path(@group,:id) do
+        -#     =icon("fa","tshirt",class: "icon")
       .side-group
         .groups-list
           - current_user.groups.each do |group|

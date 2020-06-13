@@ -1,0 +1,9 @@
+.contents.row
+  .container
+    = form_for (@tweet) do |form|
+      %h3
+        投稿する
+      = form.text_field :name, placeholder: :name, class: :form_title 
+      = form.text_field :image, placeholder: :image, class: :form_box
+      = form.text_area :text, placeholder: :text, rows: "10"
+      = form.submit "SEND", class: :form_send
