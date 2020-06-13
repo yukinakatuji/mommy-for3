@@ -1,8 +1,9 @@
 .header
-  .header-name
+  .header_name
     New📖Diary
-  .header__left
-  .header__right
+    .header__plus
+      =link_to posts_path do
+        一覧へ↩️
 
 .blog-box
   = form_for (@post) do |form|
@@ -11,4 +12,3 @@
     = form.submit 'keep a diary🖋', class: :form__send
   -#    = link_to post_path do
   .bottom-box
-
