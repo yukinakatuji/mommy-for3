@@ -2,24 +2,31 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title mommy-for3
+    %title Pictweet
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-    -# = csp_meta_tag
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    :javascript
+      WebFontConfig = {
+        google: { families: [ 'Unica+One::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
   %body
     %header.header
-      .header__title
-        My room🏡
-      .header__right
-        - if user_signed_in?
-          -# = link_to current_user.nickname, user_path(current_user), class: "header__right--btn"
-          = link_to "New📖Diary", new_post_path, class: "header__right--btn"
-        .header__right--btn
-          = link_to root_path do
-            Doorway🚪
-        -# - else
-          = link_to "ログイン", new_user_session_path, class: "header__right--btn"
-          = link_to "新規登録", new_user_registration_path, class: "header__right--btn"
-    .contents
-      = yield
+      .header__bar.row
+        %h1.grid-6
+          %a{:href => "/"} PicTweet
+        .user_nav.grid-6
+          %a.post{:href => "/tweets/new"} 投稿する
+    = yield
+    %footer
+      %p
+        Copyright PicTweet 2019.
