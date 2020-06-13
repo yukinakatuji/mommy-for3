@@ -1,10 +1,9 @@
 .header
-  .header-name
+  .header_name
     🏡〜みんなの子育てDiary〜🏡
-  .header__plus
-    =link_to posts_path do
-      みんなの投稿へ↩️
-  .header__right
+    .header__plus
+      =link_to posts_path do
+        一覧へ↩️
 
 .blog-box 
   = form_for (@post) do |form|

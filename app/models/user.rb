@@ -8,6 +8,7 @@ class User < ApplicationRecord
   has_many :groups, through: :group_users
   has_many :messages
   has_many :posts
+  has_many :tweets
    
   validates :name, presence: true, uniqueness: true
 

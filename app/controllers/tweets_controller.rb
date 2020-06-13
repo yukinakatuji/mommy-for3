@@ -15,38 +15,38 @@ class TweetsController < ApplicationController
     Tweet.create(tweet_params)
   end
 
-  def destroy
-    tweet = Tweet.find(params[:id])
-    tweet.destroy
-  end
+  # def destroy
+  #   tweet = Tweet.find(params[:id])
+  #   tweet.destroy
+  # end
 
-  def edit
-  end
+  # def edit
+  # end
 
-  def update
-    tweet = Tweet.find(params[:id])
-    tweet.update(tweet_params)
-  end
+  # def update
+  #   tweet = Tweet.find(params[:id])
+  #   tweet.update(tweet_params)
+  # end
 
-  def show
-    @comment = Comment.new
-    @comments = @tweet.comments.includes(:user)
-  end
+  # def show
+  #   @comment = Comment.new
+  #   @comments = @tweet.comments.includes(:user)
+  # end
 
-  def search
-    @tweets = Tweet.search(params[:keyword])
-  end
+  # def search
+  #   @tweets = Tweet.search(params[:keyword])
+  # end
 
   private
   def tweet_params
-    params.require(:tweet).permit(:image, :text).merge(user_id: current_user.id)
+    params.require(:tweet).permit(:name, :image, :text).merge(user_id: current_user.id)
   end
 
-  def set_tweet
-    @tweet = Tweet.find(params[:id]) 
-  end
+#   def set_tweet
+#     @tweet = Tweet.find(params[:id]) 
+#   end
 
-  def move_to_index
-    redirect_to action: :index unless user_signed_in?
-  end
+#   def move_to_index
+#     redirect_to action: :index unless user_signed_in?
+#   end
 end
