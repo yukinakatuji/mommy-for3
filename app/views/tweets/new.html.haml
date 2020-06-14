@@ -1,15 +1,16 @@
 .header
   .header_name
     .header__plus
-      =link_to posts_path do
+      =link_to tweets_path do
         一覧へ↩️
         
 .contents.row
   .container
     = form_for (@tweet) do |form|
       %h3
-        New My Idea💡
-      = form.text_field :name, placeholder: :name, class: :form_title 
-      = form.text_field :image, placeholder: :image, class: :form_box
-      = form.text_area :text, placeholder: :text, rows: "10"
-      = form.submit "SEND", class: :form_send
+      = form.text_field :name, placeholder: :name, class: :form__title 
+      = form.text_field :image, placeholder: :image, class: :form__box
+      = form.text_area :text, placeholder: :text, class: :form__text
+      = form.submit "SEND", class: :form__send
+
+      -# rows: "10"
