@@ -15,23 +15,24 @@ class TweetsController < ApplicationController
     Tweet.create(tweet_params)
   end
 
-  # def destroy
-  #   tweet = Tweet.find(params[:id])
-  #   tweet.destroy
-  # end
+  def destroy
+    tweet = Tweet.find(params[:id])
+    tweet.destroy
+  end
 
-  # def edit
-  # end
+  def edit
+  end
 
-  # def update
-  #   tweet = Tweet.find(params[:id])
-  #   tweet.update(tweet_params)
-  # end
+  def update
+    tweet = Tweet.find(params[:id])
+    tweet.update(tweet_params)
+  end
 
-  # def show
-  #   @comment = Comment.new
-  #   @comments = @tweet.comments.includes(:user)
-  # end
+  def show
+    @tweet = Tweet.find(params[:id])
+    # @comment = Comment.new
+    # @comments = @tweet.comments.includes(:user)
+  end
 
   def search
     @tweets = Tweet.search(params[:keyword])
