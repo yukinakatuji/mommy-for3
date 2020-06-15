@@ -139,7 +139,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
   }
-
+}
   .show_tweet{
     margin: 20px 0;
     padding: 30px;
@@ -151,12 +151,42 @@
     background-position: center center;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-   
-    .more{
-      height: 50px;
-      width: 30px;
-      background-color: red;
-    }
   }
 
-}
+  .edit_tweet{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    align-items: center;
+  
+    .form__title{
+      display:  block;
+      width: 80%;
+      height: 30px;
+    }
+  
+    .form__box{
+      display: block;
+      width: 80%;
+      height: 30px;
+      margin-top: 15px;
+    }
+  
+    .form__text{
+      display: block;
+      width: 80%;
+      height: 100px;
+      margin-top: 15px;
+    }
+  
+    .form__send{
+      display: block;
+      width: 30%;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  }
