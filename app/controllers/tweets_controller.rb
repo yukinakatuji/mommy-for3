@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: [:edit, :show]
-  # before_action :move_to_index, except: [:index, :show, :search]
+  before_action :move_to_index, except: [:index, :show,]
 
   def index
     @tweet = Tweet.all
@@ -35,7 +35,7 @@ class TweetsController < ApplicationController
   end
 
   def search
-    @tweets = Tweet.search(params[:keyword])
+    # @tweets = Tweet.search(params[:keyword])
   end
 
   private
