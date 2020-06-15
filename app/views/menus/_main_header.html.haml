@@ -3,7 +3,7 @@
     @Mommy for♪
   .right-header
     .side-user
-      = current_user.name
+      = link_to current_user.name, "/users/#{current_user.id}"
   .left-header
     .exit-btn
       = link_to edit_user_path(current_user) do

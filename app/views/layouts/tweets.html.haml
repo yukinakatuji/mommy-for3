@@ -1,54 +1,34 @@
 !!!
 %html
   %head
-  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-  %title Mommy-For3
-  = csrf_meta_tags
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  
-  %body
-  %header.header
-    .header__title
-      Idea💡room
-    .header__box
-      .header__left
-        = link_to "New👏Idea", new_tweet_path, class: "header__left--btn"
-      .header__right
-        = link_to "Doorway🚪", root_path, class: "header__right--btn"
-    
-.contents
-  = yield
-  
-  -# !!!
--# %html
--#   %head
--#     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
--#     %title Mommy-For3
--#     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
--#     = javascript_include_tag 'application', 'data-turbolinks-track' => true
--#     = csrf_meta_tags
--#     :javascript
--#       WebFontConfig = {
--#         google: { families: [ 'Unica+One::latin' ] }
--#       };
--#       (function() {
--#         var wf = document.createElement('script');
--#         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
--#           '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
--#         wf.type = 'text/javascript';
--#         wf.async = 'true';
--#         var s = document.getElementsByTagName('script')[0];
--#         s.parentNode.insertBefore(wf, s);
--#       })();
--#   %body
--#     %header.header
--#       .header__bar.row
--#         %h1.grid-6
--#           %a{:href => "/"} Idea💡room
--#         .user_nav.grid-6
--#           %a.post{:href => "/tweets/new"} New💡Idea
--#     = yield
--#     %footer
--#       %p
--#         -# Copyright PicTweet 2019.
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Mommy-For
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    :javascript
+      WebFontConfig = {
+        google: { families: [ 'Unica+One::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    %header.header
+      .header__title
+        Idea💡room
+      .header__box
+        .header__left
+          = link_to "New👏Idea", new_tweet_path, class: "header__left--btn"
+        .header__right
+          = link_to "Doorway🚪", root_path, class: "header__right--btn"
+
+         
+    = yield
+    %footer
+      %p
