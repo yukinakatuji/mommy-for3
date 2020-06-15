@@ -1,4 +1,10 @@
 class UsersController < ApplicationController
+
+  def index
+  # posts = Post.find(params[:id])
+  # tweets = Tweet.find(params[:id])
+  end
+  
   def show
     @user = User.find(params[:id])
     @posts = @user.posts

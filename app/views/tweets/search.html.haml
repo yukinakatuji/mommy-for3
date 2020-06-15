@@ -42,3 +42,21 @@
 -#               = link_to comment.user.nickname, "/users/#{comment.user_id}"
 -#               ：
 -#             = comment.text
+
+-# !!!
+-# %html
+-#   %head
+-#   %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+-#   %title Mommy-For3
+-#   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+-#   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+-#   = csrf_meta_tags
+-#   %body
+-#   %header.header
+-#     .header__title
+-#       Idea💡room
+-#     .header__box
+-#       .header__left
+-#         = link_to "New👏Idea", new_tweet_path, class: "header__left--btn"
+-#       .header__right
+-#         = link_to "Doorway🚪", root_path, class: "header__right--btn"

@@ -1,13 +1,3 @@
--# .btn__box
--#   - if user_signed_in? && current_user.id == @tweet.user_id
--#   .link__btn__list
--#     .link__index
--#       =link_to tweets_path do
--#         一覧へ↩️
--#     .link__edit
--#       = link_to '編集', "/tweets/#{@tweet.id}/edit", method: :get
--#     .link__destroy
--#       = link_to '削除', "/tweets/#{@tweet.id}/destroy", method: :delete
 .header
   .header_name
     .header__plus
@@ -17,11 +7,11 @@
 .contents.row
   .content_post{:style => "background-image: url(#{@tweet.image});"}
     - if user_signed_in? && current_user.id == @tweet.user_id
-      .link__btn__list
-        .link__edit
-          = link_to '編集', "/tweets/#{@tweet.id}/edit", method: :get
-        .link__destroy
-          = link_to '削除', "/tweets/#{@tweet.id}/destroy", method: :delete
+      -# .link__btn__list
+        -# .link__edit
+        -#   = link_to '編集', "/tweets/#{@tweet.id}/edit", method: :get
+        -# .link__destroy
+        -#   = link_to '削除', "/tweets/#{@tweet.id}/destroy", method: :delete
     = simple_format(@tweet.text)
     %span.name
       %a{:href => "/users/#{@tweet.user.id}"}
@@ -36,7 +26,7 @@
       %strong
         %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
   .comments
-    -# %h4 ＜コメント一覧＞
+    %h4 ＜コメント一覧＞
     - if @comments
       - @comments.each do |comment|
         %p

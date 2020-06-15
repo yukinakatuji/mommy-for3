@@ -58,12 +58,12 @@
           font-weight: bold;
         }
     
-        .icon-box{
+        .icon_box{
           height: 30px;
           padding-top: 10px;
           display: flex;
 
-          .side-icon-users{
+          .side_icon_users{
             width: 30px;
 
             .fa{
@@ -72,7 +72,7 @@
             }
           }
 
-          .side-icon-edit{
+          .side_icon_edit{
             margin-left: 10px;
 
             .far{
@@ -80,15 +80,15 @@
               font-size: 25px;
             }
           }
-          .side-icon-tshirt{
-            float: right;
-            margin-left: 10px;
+          // .side-icon-tshirt{
+          //   float: right;
+          //   margin-left: 10px;
 
-            .fa{
-              color: purple;
-              font-size: 25px;
-            }
-          }
+          //   .fa{
+          //     color: purple;
+          //     font-size: 25px;
+          //   }
+          // }
         } 
       }
 
