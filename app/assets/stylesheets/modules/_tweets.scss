@@ -142,7 +142,7 @@
   padding-top: 30px;
   display: flex;
   flex-direction: column;
-  background-color: skyblue;
+  background-color: pink;
   align-items: center;
 
   .form__title{
@@ -183,16 +183,20 @@
     background-position: center center;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+
+    .photo_title{
+      width: 60%;
+    }
   }
 
   .edit_tweet{
-    width: 85%;
+    width: 60%;
     height: 100%;
     margin: 0 auto;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    background-color: skyblue;
+    background-color: pink;
     align-items: center;
   
     .form__title{
@@ -220,5 +224,12 @@
       width: 30%;
       margin-top: 15px;
       margin-bottom: 10px;
+    }
+
+    .update_tweets{
+
+    }
+    .destroy_tweets{
+  
     }
   }

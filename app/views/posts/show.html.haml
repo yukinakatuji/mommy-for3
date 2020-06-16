@@ -1,6 +1,5 @@
 .header
   .header_name
-    🏡〜みんなの子育てDiary〜🏡
     .header__plus
       =link_to posts_path do
         一覧へ↩️
@@ -16,3 +15,19 @@
     = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
 .postText
   = simple_format @post.content
+-# .container
+-#   - if current_user
+-#     = form_for(@post) do |form|
+-#       = form.text_area :text, placeholder: "コメントする" , rows: "2", class: "textbox"
+-#       = form.submit "SEND", class: "form__submit"
+-#   - else
+-#     %strong
+-#       %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
+-# .comments
+-#   %h4 ＜コメント一覧＞
+-#   - if @comments
+-#     - @comments.each do |comment|
+-#       %p
+-#         %strong
+-#           = link_to comment.user.nickname, "/users/#{comment.user_id}"
+-#           = comment.text
