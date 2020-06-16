@@ -3,6 +3,10 @@
     .left-box
       .user-box
         = current_user.name
+      .icon_box
+        .side_icon_users
+          = link_to new_group_path do
+            =icon("fa","users", class: "icon")
       .side-group
         .group-list
           - current_user.groups.each do |group|
