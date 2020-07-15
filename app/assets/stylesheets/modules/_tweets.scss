@@ -83,54 +83,83 @@
   }
 
 }
-
+.pagination{
+  text-align: center;
+  a{
+    color: skyblue;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
 .contents.row{
 }
-.content_post{
-  margin: auto;
-  padding: 30px;
+.information_box{
+  margin-top: 20px;
+  background-color: pink;
+  height: 50px;
+  font-size: 30px;
+  .information_title{
+    width: 600px;
+    text-align: center;
+    margin: auto;
+  }
+}
+p{
+  color: black;
   position: relative;
-  height: 440px;
-  width: 60%;
-  color: #fff;
-  background-size: cover;
-  background-position: center center;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);  
-
-  
-  .more {
-    position: absolute;
-    cursor: pointer;
-    top: 20px;
-    right: 30px;
-    z-index: 2;
-    height: 100px;
-    width: 80px;
-    text-align: right;
-    &:hover ul.more_list {
-      display: block;
-    }
-    ul.more_list {
+  text-align: center;
+}
+.content_box{
+  margin-top: 20px;
+  background-color: lightcyan;
+  height: auto;
+  width: auto;
+  font-size: 20px;
+  .content_post{
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    height: 440px;
+    width: 60%;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+    .more {
       position: absolute;
-      text-align: left;
+      cursor: pointer;
+      top: 20px;
+      right: 30px;
+      z-index: 2;
+      height: 100px;
       width: 80px;
-      right: 0;
-      font-size: 12px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      display: none;
-      box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-      border-radius: 3px;
-      li {
-        border-bottom: 1px solid #ddd;
-        &:last-child {
-          border-bottom: 0;
+      text-align: right;
+      &:hover ul.more_list {
+        display: block;
+      }
+      ul.more_list {
+        position: absolute;
+        text-align: left;
+        width: 80px;
+        right: 0;
+        font-size: 12px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        display: none;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        border-radius: 3px;
+        li {
+          border-bottom: 1px solid #ddd;
+          &:last-child {
+            border-bottom: 0;
+          }
         }
       }
     }
   }
 }
+
 .create_tweets{
   
 }

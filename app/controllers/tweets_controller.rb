@@ -3,8 +3,11 @@ class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index, :show,]
 
   def index
-    @tweet = Tweet.all
-    @tweet = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(5)
+    @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(5)
+    # @tweet = Tweet.all.order("created_at DESC").page(params[:page]).per(5)
+    # @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(5)
+    # @tweets = Tweet.paginate(page: params[:page], per_page: 5)
+    # @tweet = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(5)
   end
 
   def new
