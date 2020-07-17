@@ -8,11 +8,14 @@
   .container
     = form_for (@tweet) do |form|
       %h3
-        編集する
+        Idea編集
       = form.text_field :name, placeholder: :name, class: :form__title 
       = form.text_field :image, placeholder: :image, class: :form__box
       = form.text_area :text, placeholder: :text, class: :form__text
       = form.submit "SEND", class: :form__send
+  .edit_footer
+    .edit_footer-message
+      投稿したIdeaを編集できます📷
 
 
 
