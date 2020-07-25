@@ -17,15 +17,12 @@
     position: fixed;
     top: 0 ;
     left: 0 ;
-
     .header-title{
       color: pink;
       padding: 10px;
     }
-
     .right-header{
       height: 100px;
-
       .side-user{
         font-size: 20px;
         height: 50px;
@@ -37,8 +34,7 @@
         margin-top: -60px;
       }
     }
-    .left-header{
-      
+    .left-header{ 
       .exit-btn{
         font-size: 20px;
         height: 50px;
@@ -57,53 +53,42 @@
       width: 100%;
       background-color: peachpuff;
       display: flex;
-
       .my_page-box{
-        height: 250px;
+        height: 570px;
         width: 350px;
-        background-color: lightcyan;
+        background-color: whitesmoke;
         margin: auto;
-        margin-top: 30px;
         text-align: center;
-
         .side-icons-a{
           width: 30ox;
           margin-right: 10px;
-          margin-top: 40px;
-            
+          margin-top: 120px; 
             .fa-home{
               color: violet;
               font-size: 120px;
             }
         }
-
         .my-page-title{
           color: pink;
           font-size: 30px;
           font-weight: bold;
         }
-
       }
-
       .message-box{
-        height: 250px;
+        height: 570px;
         width: 350px;
-        background-color: lightcyan;
+        background-color: whitesmoke;
         margin: auto;
-        margin-top: 30px;
         text-align: center;
-
         .side-icons-b{
           width: 30ox;
           margin-right: 10px;
-          margin-top: 40px;
-            
+          margin-top: 120px;
             .fa-baby{
               color: orange;
               font-size: 120px;
             }
         }
-
         .message-title{
           color: pink;
           font-size: 30px;
@@ -111,24 +96,20 @@
         }
       }
       .information-box{
-        height: 250px;
+        height: 570px;
         width: 350px;
-        background-color: lightcyan;
+        background-color: whitesmoke;
         margin: auto;
-        margin-top: 30px;
         text-align: center;
-
         .side-icons-c{
           width: 30ox;
           margin-right: 10px;
-          margin-top: 40px;
-            
+          margin-top: 120px; 
             .fa-child{
               color: lightseagreen;
               font-size: 120px;
             }
         }
-
         .information_title{
           color: pink;
           font-size: 30px;
