@@ -6,44 +6,35 @@
   font-size: 30px;
   text-align: center;
   align-items: center;
-
-
   .header-title{
     font-size: 30px;
     line-height: 56px;
     padding-top: 20px;
   }
-
 .header__box{
   display: flex;
   float: right;
-
   .header__left{
     font-size: 20px;
     margin-right: 35px;
     margin-top: -50px;
-
     .header__left--btn{
       text-decoration: none;
       line-height: 56px;
       color: purple;
     }
   }
-
   .header__right{
     font-size: 20px;
     margin-right: 30px;
     margin-top: -50px;
-
-
     .header__right--btn{
       text-decoration: none;
       line-height: 56px;
       color: purple;
     }
   }
- }  
-
+ } 
   .header_name{
     font-size: 25px;
    
@@ -53,26 +44,21 @@
     }
   }
 }
-
 .contents{
   flex-direction: column;;
   margin: 30px auto 0;
   height: 600px;
   width: 70%;
-  // overflow: scroll;
+  overflow: scroll;
   background-color: #ffffff;
-  
   .content{
     height: 55px;
     width: 70%;
     border-bottom: 1px solid #ffffff;
     display: flex;
     align-items: center;
-
     .content__left{
       padding-right: 20px;
-      
-
       .content__left--image{
         height: 55px;
         width: 55px;
@@ -81,25 +67,20 @@
       }
     }
     .content__right{
-
       .content__right__top{
         font-size: 20px;
         font-weight: bold;
-
         .content__right--title{
           text-decoration: none;
           color: #000000;
         }
       }
-
       .content__right__bottom{
         font-size: 15px;
         color: #999;
         display: flex;
-
         .content__right__bottom--userName{
           box-sizing: border-box;
-
           .content__right__bottom--userName-btn{
             text-decoration: none;
             color: #999;
@@ -118,7 +99,16 @@
     }
   }
 }
-  
+.footer{
+  height: 70px;
+  width: auto;
+  background-color: lightpink;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #fff;
+}
   .postTitle{
     padding-top: 20px;
     text-align: center;
@@ -141,7 +131,6 @@
     display: flex;
     justify-content: center;
     background-color: pink;
-
     &__edit{
       display: block;
       border-radius: 5px;
@@ -161,18 +150,15 @@
       margin-left: 10px;
     }
   }
-  
   .postText{
     margin: 20px 30px;
     background-color: #ffffff;
     width: calc(100vw - 50px);
   }
-
 .blog-box{
   height: 500px;
   width:100%;
   background-color: lightblue;
-
  .new_post{
     width: 85%;
     height: 100%;
@@ -182,20 +168,17 @@
     flex-direction: column;
     background-color: skyblue;
     align-items: center;
-  
     .form__main{
       display:  block;
       width: 80%;
       height: 30px;
     }
-  
     .form__box{
       display: block;
       width: 80%;
       height: 400px;
       margin-top: 15px;
     }
-  
     .form__send{
       display: block;
       width: 30%;
@@ -204,12 +187,11 @@
     }
 }
   .bottom-box{
-    height: calc(100vh - 600px);
+    height: calc(100vh - 500px);
     width: 100%;
     margin-bottom: 0px;
     background-color: lightcyan;
   }
-
   .edit_post{
     width: 85%;
     height: 100%;
@@ -219,35 +201,30 @@
     flex-direction: column;
     background-color: skyblue;
     align-items: center;
-  
   .form__main_b{
     display: block;
     width: 80%;
     height: 30px;
   }
-  
   .form__box_b{
     display: block;
     width: 80%;
     height: 400px;
     margin-top: 15px;
   }
-  
   .form__send_b{
     display: block;
     width: 30%;
     margin: 15px auto 0;
     margin-bottom: 10px;
-  }
-    
-  }
+  }  
+}
   .bottom-box{
     height: calc(100vh - 600px);
     width: 100%;
     margin-bottom: 0px;
     background-color: lightcyan;
   }
-  
   .user{
     padding: 15px 30px;
   }
