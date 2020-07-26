@@ -9,7 +9,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @posts = @user.posts
     @tweets = user.tweets.page(params[:page]).per(5).order("created_at DESC")
-    # @tweets = Kaminari.paginate_array(@products).page(params[:page]).per(5)
   end
 
   def edit

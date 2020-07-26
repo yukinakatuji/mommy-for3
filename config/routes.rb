@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   root 'posts#index'
   # root 'searches#index'
   root 'tweets#index'
+  namespace :tweets do
+    resources :searches, only: :index
+  end
   root 'groups#index'
   root 'messages#index'
   root 'user#index'
@@ -22,7 +25,7 @@ Rails.application.routes.draw do
   # registrations: 'users/registrations'
 
   resources :users, only: [:index, :show, :edit, :update]
-  resources :posts, expect: [:index, :show, :new, :create, :edit, :update]
+  resources :posts, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   # resources :searches, expect: [:index]
   resources :tweets, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   resources :groups, only: [:index, :new, :create, :edit, :update] do
@@ -32,11 +35,4 @@ Rails.application.routes.draw do
   namespace :api do
     resources :messages, only: :index, defaults: { format: 'json' }
     end
-end
-
-# [:index :show, :new, :create, :edit, :update]
-
- # resources :tweets do
-  #   # resources :comments, only: :create
-  # namespace :tweets do
-  # end
+  end
