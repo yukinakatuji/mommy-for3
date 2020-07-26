@@ -54,18 +54,19 @@
       background-color: peachpuff;
       display: flex;
       .my_page-box{
-        height: 570px;
+        height: 695px;
         width: 350px;
         background-color: whitesmoke;
         margin: auto;
         text-align: center;
+        border: solid 3px lightcoral;
         .side-icons-a{
           width: 30ox;
           margin-right: 10px;
-          margin-top: 120px; 
+          margin-top: 220px; 
             .fa-home{
               color: violet;
-              font-size: 120px;
+              font-size: 140px;
             }
         }
         .my-page-title{
@@ -75,18 +76,19 @@
         }
       }
       .message-box{
-        height: 570px;
+        height: 695px;
         width: 350px;
         background-color: whitesmoke;
         margin: auto;
         text-align: center;
+        border: solid 3px lightcoral;
         .side-icons-b{
           width: 30ox;
           margin-right: 10px;
-          margin-top: 120px;
+          margin-top: 220px;
             .fa-baby{
               color: orange;
-              font-size: 120px;
+              font-size: 140px;
             }
         }
         .message-title{
@@ -96,18 +98,19 @@
         }
       }
       .information-box{
-        height: 570px;
+        height: 695px;
         width: 350px;
         background-color: whitesmoke;
         margin: auto;
         text-align: center;
+        border: solid 3px lightcoral;
         .side-icons-c{
           width: 30ox;
           margin-right: 10px;
-          margin-top: 120px; 
+          margin-top: 220px; 
             .fa-child{
               color: lightseagreen;
-              font-size: 120px;
+              font-size: 140px;
             }
         }
         .information_title{
@@ -123,15 +126,13 @@
       width: 100%;
       background-color: lightcoral;
       position: fixed;
-      bottom: 0 ;    
-
+      bottom: 0 ;
       .footer-box{
         align-items: center;
         text-align: center;
         color: pink;
         font-size: 30px;
         font-weight: bold;
-        padding-top: 20px;
       }
     }
 }
