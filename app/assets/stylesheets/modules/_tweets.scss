@@ -44,7 +44,6 @@
     }
   }
 }
-
 .btn__box{
   background-color: lightblue;
   .link__btn__list{
@@ -71,7 +70,6 @@
       color:#ffffff;
     }
   }
-
 }
 .pagination{
   text-align: center;
@@ -82,7 +80,6 @@
   }
 }
 .contents.row{
-  width: auto;
   background-color: whitesmoke;
 }
 .information_box{
@@ -104,16 +101,18 @@
 }
 .content_box{
   margin-top: 20px;
-  background-color: lightcyan;
   height: auto;
   width: auto;
   font-size: 20px;
+  p{
+    text-align: center;
+  }
   .content_post{
     margin: auto;
     padding: 30px;
     position: relative;
     height: 440px;
-    width: 60%;
+    width: 70%;
     color: #fff;
     background-size: cover;
     background-position: center center;
@@ -128,6 +127,10 @@
       height: 100px;
       width: 80px;
       text-align: right;
+      a{
+        text-decoration: none;
+        color: purple;
+      }
       &:hover ul.more_list {
         display: block;
       }

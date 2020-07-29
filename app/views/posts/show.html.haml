@@ -1,14 +1,14 @@
-.header
-  .header_name
-    .header__plus
+.post__header
+  .post__header--name
+    .post__header--plus
       =link_to posts_path do
         一覧へ↩️
-
 .postTitle
   = @post.title
 .postDate
   = @post.created_at
 .postAuthor
+  = @post.user.name
 - if user_signed_in? && current_user.id == @post.user_id
   .postManage
     = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
