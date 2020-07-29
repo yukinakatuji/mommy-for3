@@ -10,23 +10,6 @@
     - if user_signed_in? && current_user.id == @tweet.user_id
       .photo_title
 
-
-
-      -# .link__btn__list
-        -# .link__edit
-        -#   = link_to '編集', "/tweets/#{@tweet.id}/edit", method: :get
-        -# .link__destroy
-        -#   = link_to '削除', "/tweets/#{@tweet.id}/destroy", method: :delete
-    -# = simple_format(@tweet.text)
-    -# %span.name
-    -#   %a{:href => "/users/#{@tweet.user.id}"}
-    -#     %span 投稿者
-    -#     = @tweet.user.name
-
-
-
-
-
   .container
     - if current_user
       = form_for(@tweet) do |form|
