@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  root 'user#index'
   root 'menus#index'
   root 'posts#index'
   # root 'searches#index'
