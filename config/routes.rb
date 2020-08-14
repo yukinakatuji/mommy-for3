@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  root 'user#index'
   root 'menus#index'
   root 'posts#index'
   # root 'searches#index'
@@ -9,7 +10,6 @@ Rails.application.routes.draw do
   end
   root 'groups#index'
   root 'messages#index'
-  root 'user#index'
 
 #   devise_for :users, :controllers => {
 #  :registrations => 'users/registrations'
