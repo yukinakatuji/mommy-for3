@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   end
   root 'groups#index'
   root 'messages#index'
-  root 'user#index'
 
 #   devise_for :users, :controllers => {
 #  :registrations => 'users/registrations'
