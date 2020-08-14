@@ -1,0 +1,7 @@
+.information_box
+  .information_title
+    子育てアイデアシェア🐶
+.contets_box
+  = paginate(@tweets)
+    - @tweets.each do |tweet|
+    = render partial: "tweet", locals: { tweet: tweet }

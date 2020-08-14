@@ -1,0 +1,31 @@
+.header
+  .header_name
+    .header__plus
+      =link_to tweets_path do
+        一覧へ↩️
+        
+.contents.row
+  .container
+    = form_for (@tweet) do |form|
+      %h3
+        Idea編集
+      = form.text_field :name, placeholder: :name, class: :form__title 
+      = form.text_field :image, placeholder: :image, class: :form__box
+      = form.text_area :text, placeholder: :text, class: :form__text
+      = form.submit "SEND", class: :form__send
+  .edit_footer
+    .edit_footer-message
+      投稿したIdeaを編集できます📷
+
+
+
+-# .contents.row
+-#   .container
+-#     = form_for (@tweet) do |form|
+-#       %h3
+-#         編集する
+-#       = form.text_field :image, placeholder: "Image Url"
+-#       = form.text_area :text, placeholder: "text" , rows: "10"
+-#       = form.submit "SEND"
+
+  -#  = form_with(model: @tweet, local: true) do |form|

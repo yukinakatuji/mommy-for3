@@ -52,3 +52,10 @@ production:
   database: mommy-for3_production
   username: mommy-for3
   password: <%= ENV['MOMMY-FOR3_DATABASE_PASSWORD'] %>
+
+production:
+#半角スペース２個分の空白を開ける
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %title Mommy-For
+  = csrf_meta_tags
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  
+  %body
+  %header.header
+    .header__title
+      Share✍️room
+    .header__box
+      .header__left
+        = link_to "New📖Diary", new_post_path, class: "header__left--btn"
+      .header__right
+        = link_to "Doorway🚪", root_path, class: "header__right--btn"
+    
+.contents
+  = yield
+.post-footer
+  子育てライフシェア🐰

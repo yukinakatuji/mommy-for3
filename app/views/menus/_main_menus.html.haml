@@ -1,0 +1,24 @@
+.main_menus
+  %img
+  -# = image_tag asset_path("/images/background/Mommy01.jpeg"), class: "main_menus"
+  .my_page-box
+    .side-icons-a
+      .side-icon-home 
+      =link_to posts_path do
+        =icon("fa", "home", class: "icon")
+    .my-page-title
+      Share✍️room
+  .message-box
+    .side-icons-b
+      .side-icon-baby
+      = link_to groups_path do
+        =icon("fas","baby", class: "baby")
+    .message-title
+      Fellow🌼room
+  .information-box
+    .side-icons-c
+      .side-icon-child
+        = link_to tweets_path do
+          =icon("fas","child", class: "child")
+    .information_title
+      Idea💡room

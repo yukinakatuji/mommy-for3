@@ -18,7 +18,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|e_mail|string|null: false,　unique: true|
+|e_mail|string|null: false, unique:true|
 |passward|string|null: false|
 
 ### Association
@@ -28,12 +28,12 @@ Things you may want to cover:
 - has_many :groups. through: :groups_users
 - has_many :groups_users
 
-## tweetsテーブル
+## postsテーブル
 Column|Type|Options|
 |------|----|-------|
-|text|text||
-|image|text||
-|user_id|integer|null: false, foreign_key: true|
+|title|text||
+|content|text||
+|user_id|integer|null: false,foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -83,6 +83,7 @@ Column|Type|Options|
 ### Association
 - belongs_to :group
 - belongs_to :user
+
 
 
 * Database initialization

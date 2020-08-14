@@ -1,0 +1,20 @@
+.main-view
+  .right-view
+    .messages
+      = render partial: 'message', collection: @messages
+      .upper-message
+        .upper-message_user-name
+        .upper-message__date
+      .lower-message
+        %p.lower-message__content
+      .lower-message__image
+
+    .chat-main-form
+      = form_for [@group, @message] do |f|
+        .chat-main__form__table
+          = f.text_field :content, class: 'form__message', placeholder: '仲間へメッセージを送りましょう！'
+          = f.label :image, class: "choose-image" do
+            = icon('far', 'image', class: 'icon')
+            = f.file_field :image, class: 'hidden'
+        .chat-main__form__Go-btn
+          = f.submit 'Go!', class: 'form__submit'
